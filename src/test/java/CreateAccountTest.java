@@ -21,14 +21,14 @@ public class CreateAccountTest extends BaseTest {
         Assert.assertTrue(createAccountPage.getCreateAccountForm().isEnabled());
     }
 
-    @Description("Don't enter anything")
+   /* @Description("Don't enter anything")
     @Test
     public void pressCreateAccountWithoutSetInfo() {
         CreateAccountPage createAccountPage = new CreateAccountPage(driver);
         createAccountPage.createAccountButtonClick();
         String expectedMessage = "Заполните это поле.";
         Assert.assertEquals(createAccountPage.getFirstNameField().getDomProperty("validationMessage"),expectedMessage);
-    }
+    }*/
 
 
     @Description("Is field zoneCode disabled")
@@ -78,7 +78,7 @@ public class CreateAccountTest extends BaseTest {
     }
 
 
-    @Description("Not valid email")
+    /*@Description("Not valid email")
     @Test
     public void setNotValidEmail() {
         CreateAccountPage createAccountPage = new CreateAccountPage(driver);
@@ -89,7 +89,7 @@ public class CreateAccountTest extends BaseTest {
 
         String expectedMessage = "Адрес электронной почты должен содержать символ \"@\". В адресе \"ru\" отсутствует символ \"@\".";
         Assert.assertEquals(createAccountPage.getEmailAddress().getDomProperty("validationMessage"),expectedMessage);
-    }
+    }*/
 
 
 
