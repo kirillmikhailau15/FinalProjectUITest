@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Test suite">
+    <test name="Test tests" parallel="false" thread-count="3">
+        <classes>
+            <class name="BaseTest"></class>
+            <class name="LoginTest"/>
+            <class name="CreateAccountTest">
+                <methods>
+                    <exclude name="allFieldsAreVisible"></exclude>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
