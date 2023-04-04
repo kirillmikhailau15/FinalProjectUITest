@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Success login">
+    <test name="Success login" parallel="false" thread-count="2">
+        <classes>
+            <class name="LoginTest">
+                <methods>
+                    <include name="successLogin"/>
+                    <include name="successLogin2"/>
+                    <include name="successLoginWithRememberMeButton"/>
+                    <include name="logoutCheck"/>
+                </methods>
+            </class>
+            <class name="CreateAccountTest">
+                <methods>
+                    <include name="createUserWithFullAttributesByFunc"/>
+                    <include name="createUserOnlyRequiredAttributesByFunc"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

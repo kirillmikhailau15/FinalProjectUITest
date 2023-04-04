@@ -93,6 +93,11 @@
                     <systemPropertyVariables>
                         <allure.results.directory>${project.build.directory}/allure-results</allure.results.directory>
                     </systemPropertyVariables>
+                    <suiteXmlFiles>
+                            <suiteXmlFile>src/test/java/resources/test-suite.xml</suiteXmlFile>
+                            <suiteXmlFile>src/test/java/resources/success-suite.xml</suiteXmlFile>
+                    </suiteXmlFiles>
+
                 </configuration>
             </plugin>
         </plugins>

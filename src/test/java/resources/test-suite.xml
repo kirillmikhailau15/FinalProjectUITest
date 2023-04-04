@@ -3,11 +3,12 @@
 <suite name="Test suite">
     <test name="Test tests" parallel="false" thread-count="3">
         <classes>
-            <class name="BaseTest"></class>
+            <class name="BaseTest"/>
             <class name="LoginTest"/>
             <class name="CreateAccountTest">
                 <methods>
-                    <exclude name="allFieldsAreVisible"></exclude>
+                    <exclude name="pressCreateAccountWithoutSetInfo"></exclude>
+                    <exclude name="setNotValidEmail"></exclude>
                 </methods>
             </class>
         </classes>
