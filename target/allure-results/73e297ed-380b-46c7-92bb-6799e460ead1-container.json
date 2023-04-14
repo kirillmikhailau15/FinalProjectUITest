@@ -1,1 +1,0 @@
-{"uuid":"73e297ed-380b-46c7-92bb-6799e460ead1","name":"CreateAccountTest.getURL","children":["bf84c190-becd-4180-813a-78c60b494df6"],"description":"","befores":[{"name":"getURL","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1680472611688,"stop":1680472612173}],"afters":[],"start":1680472611688,"stop":1680472612173}
