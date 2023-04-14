@@ -118,7 +118,7 @@ public class LoginTest extends BaseTest {
     @Test
     public void successLogin2() {
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.setFullInformation("nniaha@yandex.ru", "1qaz!QAZ");
+        loginPage.setFullInformation("nniaha@yandex.ru", "1qaz!QAZ12521251");
         loginPage.clickLoginButton();
 
         Assert.assertTrue(loginPage.getLogoutLink().isEnabled());
